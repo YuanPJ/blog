@@ -1,0 +1,20 @@
+textarea {
+  /*margin-top: 25px;*/
+  resize: none;
+  border-color: lightgray;
+  font-size: 18px;
+}
+.content-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+pre {
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 18px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
