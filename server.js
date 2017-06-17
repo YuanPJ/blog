@@ -5,8 +5,9 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(bodyParser.json());
 
+const mongodbUri = 'mongodb://admin:admin@ds163738.mlab.com:63738/homework-blog-database';
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog');
+mongoose.connect(mongodbUri || process.env.MONGODB_URI || 'mongodb://localhost/blog');
 console.log(`MONGODB_URI = ${process.env.MONGODB_URI}`);
 
 const db = mongoose.connection;
